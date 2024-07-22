@@ -100,12 +100,14 @@ function myFunction(input,comp){
     else{
         result.innerText = "Tie!";
     }
-    if(count1 === 5){
-        box.innerHTML = "<center><h1>Congrats You Win!</h1></center>";
-    }
-    if(count2 === 5){
-        box.innerHTML = "<center><h1>Try Again!</h1><center>";
-    }
+    setTimeout(function(){
+        if(count1 === 5){
+            box.innerHTML = "<center><h1>Congrats You Win!</h1></center>";
+        }
+        if(count2 === 5){
+            box.innerHTML = "<center><h1>Try Again!</h1><center>";
+        }
+    },1500);
 }
 
 
