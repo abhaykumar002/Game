@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    width: 100vw;
+    height: 9vh;
+    align-items: center;
+}
+.left{
+    color: white;
+    font-size: 2vmax;
+}
+.right ul{
+    display:flex;
+}
+.right ul li{
+    list-style: none;
+    padding: 0 1.5vw;
+}
+.right ul li a{
+    color: white;
+    text-decoration: none;
+}
+#game2{
+    border-bottom: 4px solid aqua;
+}
+
+.right ul li a:hover{
+    color: aqua;
+    background-color: rgb(31, 31, 31);
+    border-bottom: 4px solid aqua;
+}
+.contactMe a{
+    color: bljack !important;
+    border: 0px solid white;
+    border-radius: 7px;
+    padding: 3px;
+    background-color: aqua;
+}
+section{
+    display: flex;
+    height: 91vh;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin: 10vmin 5vmax;
+    height: calc(100vmin - 9vmin - 20vmin);
+    background-color:aqua;
+    border-radius: 60px;
+    width: calc(100vmax - 50vmax);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.topBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topBox .counterBox{
+    height:4em;
+    width: 8em;
+    border-radius: 10%;
+    display: flex;
+    background-color: royalblue;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.topBox .counterBox .counterContent{
+    display: flex;
+    font-size: 7vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle{
+    position:relative;
+    bottom: 0.09em;
+}
+
+.you{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color:crimson ;
+    position: relative;
+    padding: 0 20px;
+    left:20px;
+}
+.computer{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: crimson;
+    position: relative;
+    right: 20px;
+}
+
+.box .button{
+    display: flex;
+    justify-content: center;    
+}
+
+.box .button .image:hover{
+    background-color: rgb(255, 182, 92);
+}
+
+.box .button .image{
+    height: 8vmin;
+    width: 5.5555vmax;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 3.47vmax;
+    background-color: rgb(245, 194, 132);
+    box-shadow: -5px 4px 15px 0.5px black;
+
+}
+.button img{
+    position: relative;
+    top: 1vmin;
+    left: 0.69vw;
+    height: 6vmin;
+    width: 4.16vmax;
+}
+
+
+.playZone{
+    display: flex;
+    gap: 4vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gamewin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#result{
+    width: 7em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+
+.playZone .imageDiv img{
+    height: 35vmin;
+    width: 14vmax;
+}
+
+
+#computerHand img{
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+}
+
+#restart{
+    height: 5vmin;
+    width: 8vmax;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 2vmin;
+    box-shadow: -1px 1px 6px 3px black;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+.shakeAnimation{
+    animation-name: tilt-shaking;
+    animation-duration: 0.25s;
+    animation-iteration-count: 5;
+}
+
+
+audio{
+    display: none;
+}
+
+
+
+@media(max-width:600px){
+    .right ul{
+        display:none;
+    }
+}

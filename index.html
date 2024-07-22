@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Rock Paper Scissor
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="inde.html">Game1</a></li>
+                    <li id = "game2"><a href="">Game2</a></li>
+                    <li><a href="">Game3</a></li>
+                    <li><a href="">Game4</a></li>
+                    <li class = "contactMe"><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+            <div class="box">
+                <div class = "topBox">
+                    <div class = "you">You</div>
+                    <div class="counterBox">
+                        <div class = "counterContent">
+                            <div id = "countYou">0</div>
+                            <div id = "middle">:</div>
+                            <div id = "countComputer">0</div>
+                        </div>
+                    </div>
+                    <div class = "computer">computer</div>
+
+                </div>
+
+                <div class="playZone">
+                    <div id="yourHand" class="imageDiv"> <img id = "yourHandImage" src="rhand.png" alt=""></div>
+                    <div id="result">play</div>
+                    <div id="computerHand" class="imageDiv"><img id = "computerHandImage" src="rhand.png" alt=""></div>
+                </div>
+
+                <div class="button">
+                    <div id = "butRock" class="image"><img src="rock.png" alt=""></div>
+                    <div id = "butPaper" class="image"><img src="paper.png" alt=""></div>
+                    <div id = "butScissor" class="image"><img src="scissor.png" alt=""></div>
+                </div>
+            </div>
+            <button id = "restart">RESET</button>
+
+            <audio controls id = "rockmusic">
+                <source src="rockmusic.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls id = "papermusic">
+                <source src="papermusic.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls id = "scissorsmusic">
+                <source src="scissorsmusic.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls id = "rockmusic2">
+                <source src="rockmusic2.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls id = "papermusic2">
+                <source src="papermusic2.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls id = "scissorsmusic2">
+                <source src="scissorsmusic2.mp3" type="audio/mpeg">
+            </audio>
+
+
+
+
+
+
+        </section>
+    </main>
+
+    <script src="json.js"></script>
+
+
+</body>
+</html>
