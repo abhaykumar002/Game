@@ -31,6 +31,8 @@ butRock.onclick = function(){
     computerHand.classList.add("shakeAnimation");
     result.innerText = "wait!";
     playrock.play();
+    yourHandImage.src = array[0];
+    computerHandImage.src = array[0];
     setTimeout(function(){
         playrock.pause();
         yourHandImage.classList.remove("shakeAnimation");
@@ -49,7 +51,8 @@ butPaper.onclick = function(){
     computerHand.classList.add("shakeAnimation");
     playpaper.play();
     result.innerText = "wait!";
-
+    yourHandImage.src = array[0];
+    computerHandImage.src = array[0];
     setTimeout(function(){
         playpaper.pause();
         yourHandImage.classList.remove("shakeAnimation");
@@ -68,6 +71,8 @@ butScissor.onclick = function(){
     computerHand.classList.add("shakeAnimation");
     playscissor.play();
     result.innerText = "wait!";
+    yourHandImage.src = array[0];
+    computerHandImage.src = array[0];
     setTimeout(function(){
         playscissor.pause();
         yourHandImage.classList.remove("shakeAnimation");
